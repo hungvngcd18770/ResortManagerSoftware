@@ -1,0 +1,42 @@
+﻿@model ResortManagerSoftware.Models.ContractDetail
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ContractDetail</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Quantity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Quantity)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AttachService.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AttachService.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Contract.Id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Contract.Id)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ContractDetailId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

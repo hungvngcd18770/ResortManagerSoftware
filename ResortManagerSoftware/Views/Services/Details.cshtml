@@ -1,0 +1,90 @@
+﻿@model ResortManagerSoftware.Models.Service
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Service</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Are)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Are)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DoubleS)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DoubleS)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SerciceMaxPeople)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SerciceMaxPeople)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StandRoom)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StandRoom)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DescriptionOtherConvenience)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DescriptionOtherConvenience)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PoolArea)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PoolArea)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ren_Type.RenName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ren_Type.RenName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Service_type.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Service_type.Name)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ServiceId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
