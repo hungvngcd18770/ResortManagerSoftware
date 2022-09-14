@@ -44,8 +44,7 @@ namespace ResortManagerSoftware.Controllers
         }
 
         // POST: Customers/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "CustomerId,CustomerTypeId,Name,Birthday,Gender,Card,Phone,Email,Address")] Customer customer)
@@ -78,8 +77,7 @@ namespace ResortManagerSoftware.Controllers
         }
 
         // POST: Customers/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit([Bind(Include = "CustomerId,CustomerTypeId,Name,Birthday,Gender,Card,Phone,Email,Address")] Customer customer)

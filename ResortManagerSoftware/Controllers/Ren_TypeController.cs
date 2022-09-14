@@ -42,8 +42,7 @@ namespace ResortManagerSoftware.Controllers
         }
 
         // POST: Ren_Type/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "RentypeId,RenName,RenCost")] Ren_Type ren_Type)
@@ -74,8 +73,7 @@ namespace ResortManagerSoftware.Controllers
         }
 
         // POST: Ren_Type/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit([Bind(Include = "RentypeId,RenName,RenCost")] Ren_Type ren_Type)

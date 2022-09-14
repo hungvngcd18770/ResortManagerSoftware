@@ -46,8 +46,7 @@ namespace ResortManagerSoftware.Controllers
         }
 
         // POST: Contracts/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "Id,StartDate,EndDate,Deposit,TotalMoney,EmployeeId,CustomerId,ServiceId")] Contract contract)
@@ -84,8 +83,7 @@ namespace ResortManagerSoftware.Controllers
         }
 
         // POST: Contracts/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit([Bind(Include = "Id,StartDate,EndDate,Deposit,TotalMoney,EmployeeId,CustomerId,ServiceId")] Contract contract)

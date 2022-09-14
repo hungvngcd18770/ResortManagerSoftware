@@ -42,8 +42,7 @@ namespace ResortManagerSoftware.Controllers
         }
 
         // POST: Divisions/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "DivisionId,Name")] Division division)
@@ -74,8 +73,7 @@ namespace ResortManagerSoftware.Controllers
         }
 
         // POST: Divisions/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit([Bind(Include = "DivisionId,Name")] Division division)

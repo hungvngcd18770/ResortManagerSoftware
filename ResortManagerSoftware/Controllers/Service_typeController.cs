@@ -42,8 +42,7 @@ namespace ResortManagerSoftware.Controllers
         }
 
         // POST: Service_type/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "TypeId,Name")] Service_type service_type)
@@ -74,8 +73,7 @@ namespace ResortManagerSoftware.Controllers
         }
 
         // POST: Service_type/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit([Bind(Include = "TypeId,Name")] Service_type service_type)
