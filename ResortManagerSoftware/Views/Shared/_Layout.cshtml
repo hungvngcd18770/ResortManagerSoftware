@@ -14,31 +14,35 @@
         <div class="navbar navbar-inverse navbar-fixed-top">
             <div class="container">
                 <div class="site-navbar bg-light">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <div class="col-2">
-                            <h2 class="mb-0 site-logo">
-                                @Html.ActionLink("ResortManager", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-                            </h2>
-                        </div>
+                    <div class="py-1">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <div class="row align-items-center">
+                                <div class="col-2">
+                                    <h2 class="mb-0 site-logo">
+                                        @Html.ActionLink("ResortManager", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                                    </h2>
+                                </div>
 
-                    </div>
-                    <div class="navbar-collapse collapse">
-                        <ul class="nav navbar-nav">
-                            <li>@Html.ActionLink("HOME", "Index", "Home")</li>
-                            <li>@Html.ActionLink("SERVICE", "Index", "Services")</li>
-                            <li>@Html.ActionLink("EVENT", "Index", "Home")</li>
-                            <li>@Html.ActionLink("INFORMATION", "Index", "Home")</li>
-                            <li>@Html.ActionLink("CONTACT", "Index", "Contracts")</li>
-                        </ul>
-                        @Html.Partial("_LoginPartial")
+                            </div>
+                            <div class="navbar-collapse collapse">
+                                <ul class="nav navbar-nav">
+                                    <li>@Html.ActionLink("HOME", "Index", "Home")</li>
+                                    <li>@Html.ActionLink("SERVICE", "Index", "Services")</li>
+                                    <li>@Html.ActionLink("EVENT", "Index", "Home")</li>
+                                    <li>@Html.ActionLink("INFORMATION", "Index", "Home")</li>
+                                    <li>@Html.ActionLink("CONTACT", "Index", "Contracts")</li>
+                                </ul>
+                                @Html.Partial("_LoginPartial")
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
+             </div>
         </div>
     </div>
     <div class="container body-content">

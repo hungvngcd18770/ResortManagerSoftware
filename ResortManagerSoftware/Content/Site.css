@@ -18,7 +18,21 @@ h1, h2, h3, h4, h5,
 .h1, .h2, .h3, .h4, .h5 {
     color: #000;
 }
+.site-navbar {
+    margin-bottom: 0px;
+    width: 100%;
+    border-bottom: none;
+    background: transparent !important;
+}
+    .site-navbar .site-logo {
+        font-weight: 200;
+        font-family: "Playfair Display";
+    }
 
+        .site-navbar .site-logo a {
+            font-weight: 200;
+            font-size: 26px;
+        }
 .site-navbar-wrap {
     background: transparent !important;
     position: fixed;
